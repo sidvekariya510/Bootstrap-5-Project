@@ -46,8 +46,12 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        .section1 .innercontent h1,
-        .innercontent p {
+        .section1 .innercontent h1 {
+            padding: 3% 3%;
+            /* font-size: 50px; */
+        }
+
+        .section1 .innercontent p {
             padding: 3% 3%;
         }
 
@@ -242,44 +246,49 @@
                 <div class="row banner d-flex justify-content-center text-light gx-0">
 
                     <!-- Heading -->
-                    <div
-                        class="h3 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs text-md-start text-sm-start text-center">
-                        Commute
+                    <div class="h3 fw-bold col-xl-2 col-lg-3 col-sm-4 text-md-start text-sm-start text-center"
+                        style="letter-spacing: 1px;">
+                        Commute</div>
 
-                        <!-- menu button -->
-                        <div class="menu d-lg-none d-sm-flex justify-content-sm-end
-                        col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs">
-                            <a class="bar btn btn-transparent" data-bs-toggle="collapse" href="#collapseExample"
-                                role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
-                            </a>
-                        </div>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body text-center list-unstyled bg-dark bg-gradient">
-                                <li><a class="dropdown-item fs-5 text-muted" href="index.html">Home</a></li>
-                                <li><a class="dropdown-item fs-5 text-muted" href="about_us.html">About Us</a></li>
-                                <li><a class="dropdown-item fs-5 text-muted" href="services.html">Services</a></li>
-                                <li><a class="dropdown-item fs-5 text-muted" href="gallery.html">Gallery</a></li>
-                                <li><a class="dropdown-item fs-5 text-muted" href="contact.html">Contact</a></li>
-                                <li><a class="dropdown-item fs-5 text-muted" href="#"><i
-                                            class="fa-solid fa-phone fa-sm p-2" style="color: #ffd70f;"></i>
-                                        +12 34 3456 7890</a></li>
-                            </div>
+                    <!-- menu button -->
+                    <div class="menu d-lg-none d-sm-flex justify-content-sm-end 
+                       col-xl-9 col-lg-9 col-sm-8 col-auto">
+                        <a class="bar btn btn-transparent" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body text-center list-unstyled bg-dark bg-gradient">
+                            <li><a class="dropdown-item fs-5 text-muted" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="about_us.html">About Us</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="#"><i class="fa-solid fa-phone fa-sm p-2"
+                                        style="color: #ffd70f;"></i>
+                                    +12 34 3456 7890</a></li>
                         </div>
                     </div>
 
+
                     <!-- Menu list -->
                     <div
-                        class="d-lg-flex d-md-none d-sm-none d-none col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs justify-content-end text-center p-2">
+                        class="d-lg-flex d-md-none d-sm-none d-none col-xl-10 col-lg-9 col-md-12 col-sm-12 justify-content-end text-center p-2">
                         <ul class="list-unstyled d-md-flex justify-content-md-center align-items-md-center d-sm-block">
-                            <li class=""><a href="index.html" class=" text-light text-decoration-none px-3 px-sm-2">Home</a></li>
-                            <li class=""><a href="about_us.html" class=" text-light text-decoration-none px-3 px-sm-2">About Us</a>
+                            <li class=""><a href="index.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">Home</a></li>
+                            <li class=""><a href="about_us.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">About Us</a>
                             </li>
-                            <li class=""><a href="services.html" class=" text-light text-decoration-none px-3 px-sm-2">Services</a>
+                            <li class=""><a href="services.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">Services</a>
                             </li>
-                            <li class=""><a href="gallery.html" class=" text-light text-decoration-none px-3 px-sm-2">Gallery</a>
+                            <li class=""><a href="gallery.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">Gallery</a>
                             </li>
-                            <li class=""><a href="contact.html" class=" text-light text-decoration-none px-3 px-sm-0">Contact</a>
+                            <li class=""><a href="contact.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-0">Contact</a>
                             </li>
                             <li> <i class="fa-solid fa-phone fa-sm p-2" style="color: #ffd70f;"></i>
                                 +12 34 3456 7890
@@ -289,8 +298,9 @@
 
                     <!--Sub Section-1 -->
                     <div
-                        class="innercontent row text-center d-flex flex-row align-items-center justify-content-center p-lg-5 p-md-1 p-sm-0 ">
-                        <h1 class="col-md-10 col-sm-12 text-light fs-1 fw-bold px-sm-0">TRIP NOW EXCEPTIONAL
+                        class="innercontent row text-center d-flex flex-row align-items-center justify-content-center p-lg-5 p-md-1 p-sm-1 ">
+                        <h1 class="col-xxl-10 col-lg-12 col-md-10 col-sm-12 text-light fw-bold display-5 px-sm-0">TRIP
+                            NOW EXCEPTIONAL
                             ADVENTURE</h1>
                         <p class="col-sm-12 text-light fs-3  px-sm-0">Vestibulum Consequat. Curabitur Mauris
                             Justo</p>
@@ -481,8 +491,7 @@
                         </div>
                         <div class="col-4">
                             <input class="subscribe btn btn-warning btn-sm text-light py-lg-2 px-lg-3 py-sm-2 px-sm-5"
-                            style="background-color: #da9d40;"
-                                type="button" value="Subscribe">
+                                style="background-color: #da9d40;" type="button" value="Subscribe">
                         </div>
                     </form>
                 </div>
@@ -536,4 +545,5 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
