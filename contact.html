@@ -54,6 +54,60 @@
             min-width: 100%;
             background-size: cover;
         }
+
+
+        /* media query for smallest screen 300px */
+        @media (max-width:575px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .section6 .para {
+                font-size: 18px !important;
+                font-weight: 500 !important;
+            }
+
+            .section6 .email {
+                font-size: 17px !important;
+            }
+
+            .section6 .subscribe {
+                background-color: #da9d40 !important;
+                color: #ffffff;
+                border-radius: unset;
+                padding: 2px 15px !important;
+            }
+
+            .section7 {
+                max-width: 100%;
+            }
+
+            .section7 .footer {
+                padding: 48px 0 !important;
+                margin: 0 !important;
+            }
+
+            .section7 .foothead {
+                text-align: center;
+            }
+
+            .section7 .footicons p {
+                display: flex;
+                justify-content: center;
+            }
+
+            .section7 .footlinks {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr);
+                font-size: 16px !important;
+            }
+
+            .section7 .footlinks .home {
+                padding-left: 20px;
+            }
+        }
     </style>
 </head>
 

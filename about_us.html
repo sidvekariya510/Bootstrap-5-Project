@@ -55,6 +55,79 @@
             min-width: 100%;
             background-size: cover;
         }
+
+        /* media query for smallest screen 300px */
+        @media (max-width:575px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+
+            .section3 .main{
+                padding: 0px !important;
+            
+            }
+
+            .section4 .main{
+                padding: 0px !important;
+            }
+            .section4 .sub{
+                padding: 0px !important;
+            }
+            .section4 .sub h1{
+                font-size: 20px !important;
+                font-weight: bold !important;
+            }
+            .section4 .sub p{
+                font-size: 14px !important;
+            }
+
+            .section6 .para {
+                font-size: 18px !important;
+                font-weight: 500 !important;
+            }
+
+            .section6 .email {
+                font-size: 17px !important;
+            }
+
+            .section6 .subscribe {
+                background-color: #da9d40 !important;
+                color: #ffffff;
+                border-radius: unset;
+                padding: 2px 15px !important;
+            }
+
+            .section7 {
+                max-width: 100%;
+            }
+
+            .section7 .footer {
+                padding: 48px 0 !important;
+                margin: 0 !important;
+            }
+
+            .section7 .foothead {
+                text-align: center;
+            }
+
+            .section7 .footicons p {
+                display: flex;
+                justify-content: center;
+            }
+
+            .section7 .footlinks {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr);
+                font-size: 16px !important;
+            }
+
+            .section7 .footlinks .home {
+                padding-left: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -106,7 +179,7 @@
     <div class="section3 container-fluid">
         <div class="container">
             <div class="row p-2">
-                <div class="col-lg-6 col-sm-12 p-5 lh-lg align-content-center">
+                <div class="main col-lg-6 col-sm-12 p-5 lh-lg align-content-center">
                     <h4 class="lh-lg" style="letter-spacing: 1px">
                         Sed Ut Perspiciatis Unde Omnis
                     </h4>
@@ -134,8 +207,8 @@
         <div class="overlay">
             <div class="banner">
                 <div class="container text-center w-75 lh-lg">
-                    <div class="row text-light p-5 gx-0">
-                        <div class="col-11 mx-4 px-0">
+                    <div class="main row text-light p-5 gx-0">
+                        <div class="sub col-11 mx-4 px-0">
                             <h1 class="fw-light display-4 py-4">
                                 Get Flat 20% Offer On Tours
                             </h1>
