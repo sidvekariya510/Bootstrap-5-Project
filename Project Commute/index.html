@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commute</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=1x&id=wuGDzRr010d0&format=png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Poppins:wght@100;200&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* section-1 */
+        .section1 .overlay {
+            background: url(https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-width: 100%;
+        }
+
+
+        .section1 .innercontainer .banner {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 3% 13% 10% 13%;
+        }
+
+        .section1 .innercontent {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .section1 .innercontent h1 {
+            padding: 3% 3%;
+            /* font-size: 50px; */
+        }
+
+        .section1 .innercontent p {
+            padding: 3% 3%;
+        }
+
+        /* section3 */
+        .section3 .overlay {
+            background: url(https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner4.jpg) center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-width: 100%;
+        }
+
+        .section3 .banner {
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        /* section5 */
+        .section5 .overlay {
+            background: url(https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner4.jpg) center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-width: 100%;
+        }
+
+        .section5 .banner {
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        /* section7 */
+        .section7 .overlay {
+            background: rgba(0, 0, 0);
+            min-width: 100%;
+            background-size: cover;
+        }
+
+        /* media query for smallest screen 300px */
+        @media (max-width:575px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .section1 .innercontainer .banner {
+                padding: 3% 3% 10% 3% !important;
+            }
+
+            .section1 .h3 {
+                font-size: 35px;
+                padding: 50px 0;
+            }
+
+            .section1 .bar i {
+                font-size: 20px;
+            }
+
+            .section1 .collapse a {
+                font-size: 16px !important;
+            }
+
+            .section1 .innercontent h1 {
+                font-size: 18px !important;
+                font-weight: 600;
+            }
+
+            .section1 .innercontent p {
+                padding: 0% 3%;
+                font-size: 14px !important;
+            }
+
+            .section1 .innercontent a {
+                font-size: 14px !important;
+                padding: 4px 0px !important;
+                width: 100px;
+            }
+
+            .section2 {
+                margin: 30px 0px;
+            }
+
+            .section2 .row {
+                padding: 10px 10px;
+            }
+
+            .section2 .row .box1 {
+                margin: 10px 0px;
+                padding: 10px 10px;
+            }
+
+            .section2 .row .box1 i,
+            .box1 h3,
+            .box1 p {
+                padding: 10px;
+            }
+
+            .section3 .banner .left {
+                padding: 20px;
+            }
+
+            .section3 .banner .right {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 15px 0px;
+                margin: 0px !important;
+            }
+
+            .section4 .row h1 {
+                font-size: 20px;
+                padding: 20px;
+            }
+
+            .section4 .row .topp {
+                margin-bottom: 20px !important;
+            }
+
+            .section4 .row .topp p,
+            .section4 .row .botom p {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .section4 .row img {
+                height: 80px;
+            }
+
+            .section4 .title {
+                font-size: 15px !important;
+            }
+
+            .section4 .subtitle {
+                font-size: 12px !important;
+
+            }
+
+            .section5 .main button {
+                background-color: #da9d40 !important;
+                color: #ffffff;
+                border-radius: unset;
+            }
+
+            .section6 .para {
+                font-size: 18px !important;
+                font-weight: 500 !important;
+            }
+
+            .section6 .email {
+                font-size: 17px !important;
+            }
+
+            .section6 .subscribe {
+                background-color: #da9d40 !important;
+                color: #ffffff;
+                border-radius: unset;
+                padding: 2px 15px !important;
+            }
+
+            .section7 {
+                max-width: 100%;
+            }
+
+            .section7 .footer {
+                padding: 48px 0 !important;
+                margin: 0 !important;
+            }
+
+            .section7 .foothead {
+                text-align: center;
+            }
+
+            .section7 .footicons p {
+                display: flex;
+                justify-content: center;
+            }
+
+            .section7 .footlinks {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr);
+                font-size: 16px !important;
+            }
+
+            .section7 .footlinks .home {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- section-1 container -->
+    <div class="section1 container-fluid d-flex gx-0">
+        <div class="overlay container">
+            <div class="innercontainer container-fluid">
+                <div class="row banner d-flex justify-content-center text-light gx-0">
+
+                    <!-- Heading -->
+                    <div class="h3 fw-bold col-xl-2 col-lg-3 col-sm-4 text-md-start text-sm-start text-center"
+                        style="letter-spacing: 1px;">
+                        Commute</div>
+
+                    <!-- menu button -->
+                    <div class="menu d-lg-none d-sm-flex justify-content-sm-end 
+                       col-xl-9 col-lg-9 col-sm-8 col-auto">
+                        <a class="bar btn btn-transparent" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body text-center list-unstyled bg-dark bg-gradient">
+                            <li><a class="dropdown-item fs-5 text-muted" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="about_us.html">About Us</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="#"><i class="fa-solid fa-phone fa-sm p-2"
+                                        style="color: #ffd70f;"></i>
+                                    +12 34 3456 7890</a></li>
+                        </div>
+                    </div>
+
+
+                    <!-- Menu list -->
+                    <div
+                        class="d-lg-flex d-md-none d-sm-none d-none col-xl-10 col-lg-9 col-md-12 col-sm-12 justify-content-end text-center p-2">
+                        <ul class="list-unstyled d-md-flex justify-content-md-center align-items-md-center d-sm-block">
+                            <li class=""><a href="index.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">Home</a></li>
+                            <li class=""><a href="about_us.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">About Us</a>
+                            </li>
+                            <li class=""><a href="services.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">Services</a>
+                            </li>
+                            <li class=""><a href="gallery.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-2">Gallery</a>
+                            </li>
+                            <li class=""><a href="contact.html"
+                                    class=" text-light text-decoration-none px-xl-4 px-sm-0">Contact</a>
+                            </li>
+                            <li> <i class="fa-solid fa-phone fa-sm p-2" style="color: #ffd70f;"></i>
+                                +12 34 3456 7890
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Sub Section-1 -->
+                    <div
+                        class="innercontent row text-center d-flex flex-row align-items-center justify-content-center p-lg-5 p-md-1 p-sm-1 ">
+                        <h1 class="col-xxl-10 col-lg-12 col-md-10 col-sm-12 text-light fw-bold display-5 px-sm-0">TRIP
+                            NOW EXCEPTIONAL
+                            ADVENTURE</h1>
+                        <p class="col-sm-12 text-light fs-3  px-sm-0">Vestibulum Consequat. Curabitur Mauris
+                            Justo</p>
+                        <a href="#"
+                            class="col-lg-4 col-sm-5 text-light fw-light text-decoration-none fs-4 py-3 px-0 border border-1 px-sm-0 gx-0 ">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-2 Container -->
+    <div class="section2 container">
+        <div class="container my-lg-5 my-sm-5">
+            <h1 class="text-center fw-bold">What We Do</h1>
+        </div>
+        <div class="main row">
+            <div class="left col-lg-6 col-sm-12 ps-lg-0">
+                <div class="row text-center">
+                    <!-- box-1 -->
+                    <div
+                        class="box1 col-lg-5 col-md-5 offset-md-1 shadow p-lg-2 mb-lg-3 bg-body rounded py-lg-5 py-sm-4 m-lg-3 my-sm-3">
+                        <i class="fa-solid fa-gears fa-2xl fs-1" style="color: #da9d40;"></i>
+                        <h3 class="pt-lg-4 pt-sm-4">Integer Pulvinar</h3>
+                        <p class="px-3 text-muted">Integer sit amet mattis quam, sit amet ultricies velit...</p>
+                    </div>
+                    <!-- box-2 -->
+                    <div
+                        class="box1 col-lg-5 col-md-5 mx-md-3 shadow p-lg-2 mb-lg-3 bg-body rounded py-lg-5 py-sm-4 m-lg-3 my-sm-3">
+                        <i class="fa fa-headphones fa-2xl fs-1" style="color: #da9d40;"></i>
+                        <h3 class="pt-lg-4 pt-sm-4">Integer Pulvinar</h3>
+                        <p class="px-3 text-muted">Integer sit amet mattis quam, sit amet ultricies velit...</p>
+                    </div>
+                    <!-- box-3 -->
+                    <div
+                        class="box1 col-lg-5 col-md-5 offset-md-1 shadow p-lg-2 mb-lg-3 bg-body rounded py-lg-5 py-sm-4 m-lg-3 my-sm-3">
+                        <i class="fa-regular fa-calendar-days fa-2xl fs-1" style="color: #da9d40;"></i>
+                        <h3 class="pt-lg-4 pt-sm-4">Integer Pulvinar</h3>
+                        <p class="px-3 text-muted">Integer sit amet mattis quam, sit amet ultricies velit...</p>
+                    </div>
+                    <!-- box-4 -->
+                    <div
+                        class="box1 col-lg-5 col-md-5 mx-md-3 shadow p-lg-2 mb-lg-3 bg-body rounded py-lg-5 py-sm-4 m-lg-3 my-sm-3">
+                        <i class="fa fa-cubes fa-2xl fs-1" style="color: #da9d40;"></i>
+                        <h3 class="pt-lg-4 pt-sm-4">Integer Pulvinar</h3>
+                        <p class="px-3 text-muted">Integer sit amet mattis quam, sit amet ultricies velit...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right col-lg-6 col-sm-12 p-lg-0 p-sm-4">
+                <img class="img-fluid"
+                    src="https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/1.jpg"
+                    alt="Girl in a pink dress">
+            </div>
+        </div>
+    </div>
+
+    <!-- section-3 Container -->
+    <div class="section3 container-fluid gx-0 pt-5">
+        <div class="overlay">
+            <div class="banner">
+                <div class="container p-lg-5 p-sm-4 py-sm-5 py-lg-5">
+                    <div class="row text-light gx-0">
+                        <!-- left part -->
+                        <div class="left col-lg-5 col-sm-12 px-lg-2">
+                            <h1 class="">Years In The Field</h1>
+                            <p class="">Integer pulvinar leo id viverra feugiat. Pellentesque libero justo, semper at
+                                tempus vel, ultrices in ligula. Nulla sollicit sed.</p>
+                            <h3 class=""><span class="display-4 fw-bold" style="color: #da9d40;">20+</span>Years of
+                                Experience</h3>
+                        </div>
+
+                        <!-- right part -->
+                        <div class="col-lg-7 col-sm-12 pt-lg-0 pt-sm-5">
+                            <div class="right row text-light text-center">
+                                <div class="col-sm-4">
+                                    <p class="">Happy Customers</p>
+                                    <h1 class="">12k</h1>
+                                    <i class="fa fa-users border border-1 rounded-circle bg-light text-dark p-3"></i>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <p class="">Completed Work</p>
+                                    <h1 class="">15k</h1>
+                                    <i class="fa fa-tasks border border-1 rounded-circle bg-light text-dark p-3"></i>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <p class="">Total Tours</p>
+                                    <h1 class="">25k</h1>
+
+                                    <i
+                                        class="fa-regular fa-file border border-1 rounded-circle bg-light text-dark p-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-4 Container -->
+    <div class="section4 container-fluid" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="row text-center pt-5">
+                <h1 class="fw-bold">What People Are Saying</h1>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="topp col-lg-5 col-sm-11 border border-1 shadow bg-body p-lg-4 m-lg-3 p-sm-4 m-sm-3">
+                    <!-- top part -->
+                    <div class="">
+                        <p class="fst-italic fw-bold text-muted"><i class="fa fa-quote-left fs-1"
+                                style="color: #da9d40;"></i> Nam libero tempore, cum soluta nobis est eligendi optio
+                            cumque nihil impedit quo minus id quod possimus, omnis voluptas.</p>
+                    </div>
+                    <!-- bottom part -->
+                    <div class="d-flex">
+                        <img class="rounded-circle m-3"
+                            src="https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/te1.jpg"
+                            alt="round img" width="80px">
+                        <div class="m-3 align-self-center">
+                            <h6 class="title" style="color: #da9d40;">Thomas Carl</h6>
+                            <p class="subtitle">Add Some Description</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botom  col-lg-5 col-sm-11 border border-1 shadow bg-body p-lg-4 m-lg-3 p-sm-4 m-sm-3">
+                    <!-- top part -->
+                    <div class="">
+                        <p class="fst-italic fw-bold text-muted"><i class="fa fa-quote-left fs-1"
+                                style="color: #da9d40;"></i> Nam libero tempore, cum soluta nobis est eligendi optio
+                            cumque nihil impedit quo minus id quod possimus, omnis voluptas.</p>
+                    </div>
+                    <!-- bottom part -->
+                    <div class="d-flex">
+                        <img class="rounded-circle m-3"
+                            src="https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/te2.jpg"
+                            alt="round img" width="80px">
+                        <div class="m-3 align-self-center">
+                            <h6 class="title" style="color: #da9d40;">Adam Ster</h6>
+                            <p class="subtitle">Add Some Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-5 Container -->
+    <div class="section5 container-fluid gx-0 pt-5">
+        <div class="overlay">
+            <div class="banner">
+                <div class="container">
+                    <div class="main row text-center text-light p-5 gx-0">
+                        <div class="col-12">
+                            <h1 class="py-4">We Are Ready To Work With You</h1>
+                            <p class="text-muted">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem
+                                ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing sed
+                                do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum</p>
+                            <a href="contact.html" class="btn btn-warning text-light my-3 p-2 px-3 rounded-0" type="button" style="background-color: #da9d40;">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-6 Container -->
+    <div class="section6 container-fluid">
+        <div class="container">
+            <div class="row text-center py-5">
+                <div class="col-12 pb-5">
+                    <h1 class="fw-bold">Newsletter</h1>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-sm-12 text-start">
+                    <p class="para fs-4">Duis nisi sapien, elementum finibus fermentum eget, aliquet a leo.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <form class="row my-lg-0 my-sm-3">
+                        <div class="col-6 offset-1">
+                            <input class="email fs-4"
+                                style="border-bottom: 2px solid black; border-top: none; border-left: none; border-right: none;"
+                                type="text" name="email" id="" placeholder="Enter your Email">
+
+                        </div>
+                        <div class="col-4">
+                            <input class="subscribe btn btn-warning btn-sm text-light py-lg-2 px-lg-3 py-sm-2 px-sm-5"
+                                style="background-color: #da9d40;" type="button" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-7 Container -->
+    <div class="section7 container-fluid gx-0">
+        <div class="overlay">
+            <div class="container">
+                <div class="footer row text-light py-5 px-3">
+                    <div class="foothead col-lg-4 col-sm-12 text-lg-start text-sm-center">
+                        <h1 class="display-6 fw-bold">Get In Touch with us</h1>
+                    </div>
+                    <div class="footicons col-lg-8 fs-5">
+                        <p class="d-flex justify-content-lg-end justify-content-sm-center pt-2">
+                            <a href=""><i class="fa-brands fa-facebook-f text-muted ps-4"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter text-muted ps-4"></i></a>
+                            <a href=""><i class="fa-brands fa-google-plus-g text-muted ps-4"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram text-muted ps-4"></i></a>
+                        </p>
+                        <li
+                            class="footlinks list-unstyled d-flex justify-content-lg-end justify-content-sm-center pt-2">
+                            <a class="home text-decoration-none text-muted" href="index.html">Home</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="about_us.html">About Us</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="services.html">Services</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="gallery.html">Gallery</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="services.html">Subscribe</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="contact.html">Contact</a>
+                        </li>
+                    </div>
+                    <hr class=" text-light my-4">
+                    <div class="footerbottom col-12 text-center text-muted">
+                        <p class="">
+                            © 2023 Commute. All rights reserved | Design by <a href="https://github.com/sidvekariya510"
+                                class="text-light text-decoration-none">Siddharth.V</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
