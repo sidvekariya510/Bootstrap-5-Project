@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title of the webpage -->
+    <title>Tesla(clone) - Electric cars, Solar & Clean Energy </title>
+    <link rel="shortcut icon" href="src/Tesla-Logo-white.png" type="image/x-icon">
+    <!--external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style for smaller screens -->
+    <style>
+        /* media for small screen */
+        @media (max-width:991px) {
+
+            .Section1 .product_info,
+            .Section1 .order_demo,
+            .Section2 .product_info,
+            .Section2 .order_demo {
+                z-index: 1;
+                color: #ffffff;
+            }
+            .mainLogo {
+                padding-left: 40px;
+            }
+            .menu {
+                position: fixed;
+                top: 2.6%;
+                right: 40px;
+                z-index: 8;
+            }
+
+            /* active runs only when btn is clicked in small screen <991*/
+            header.active {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                z-index: 8;
+                position: fixed;
+            }
+
+            header.active ul.nav {
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(0, 0, 0);
+                z-index: 8;
+            }
+
+            header.active div.icons {
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                background-color: rgb(0, 0, 0);
+                z-index: 8;
+            }
+
+            header.active div.icons a i {
+                color: #ffffff;
+            }
+
+            /* to prevent dropdown hover effect in menu tab*/
+            header.active ul.nav {
+                pointer-events: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section1 HomePage Model 3-->
+    <div id="s1" class="Section1 container-fluid d-flex g-0">
+        <div class="overlay w-100">
+            <div class="main_header container-fluid g-0">
+                <header id="headerLight" class="header_light row g-0
+                    d-lg-flex flex-lg-wrap justify-content-lg-between align-items-lg-center p-3">
+                    <div class="col-lg-3 col-6 text-start text-lg-start">
+                        <a href="#" class="text-decoration-none">
+                            <img src="src/tesla-9-logo-black-and-white.png" class="mainLogo" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav d-none d-lg-flex col-lg-6 justify-content-lg-center">
+                        <!-- li 1 -->
+                        <li class="vehicles"><a href="#"
+                                class="nav-link px-lg-2 fw-semibold">Vehicles</a>
+
+                            <!-- dropdown content vehicles-->
+                            <div id="dd" class="dropdown_content row bg-light text-dark text-center">
+                                <div class="left col-lg-8 d-lg-flex flex-lg-wrap">
+                                    <!-- Model S -->
+                                    <div class="modelS col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Model_S.avif"
+                                                alt="model_S">
+                                        </div>
+                                        <p class="h5 col-lg-12">Model S</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <!-- Model 3 -->
+                                    <div class="model3 col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Model_3.avif"
+                                                alt="model_3">
+                                        </div>
+                                        <p class="h5 col-lg-12">Model 3</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <!-- Model X -->
+                                    <div class="modelX col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Model_X.avif"
+                                                alt="model_X">
+                                        </div>
+                                        <p class="h5 col-lg-12">Model X</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <!-- Model Y -->
+                                    <div class="modelY col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Model_Y.avif"
+                                                alt="model_Y">
+                                        </div>
+                                        <p class="h5 col-lg-12">Model Y</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                </div>
+
+                                <div class="right col-lg-4 d-lg-flex ps-5">
+                                    <ul class="list-unstyled text-start text-dark">
+                                        <li><a class="text-decoration-none" href="#">Inventory</a></li>
+                                        <li><a class="text-decoration-none" href="#">Used Cars</a></li>
+                                        <li><a class="text-decoration-none" href="#">Demo Drive</a></li>
+                                        <li><a class="text-decoration-none" href="#">Trade-in</a></li>
+                                        <li><a class="text-decoration-none" href="#">Help Me Choose</a></li>
+                                        <li><a class="text-decoration-none" href="#">Compare</a></li>
+                                        <li><a class="text-decoration-none" href="#">Fleet</a></li>
+                                        <li><a class="text-decoration-none" href="#">Cybertruck</a></li>
+                                        <li><a class="text-decoration-none" href="#">Semi</a></li>
+                                        <li><a class="text-decoration-none" href="#">Roadster</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <!-- li 2 -->
+                        <li class="energy"><a href="#"
+                                class="nav-link  px-lg-2 fw-semibold">Energy</a>
+                            <!-- dropdown content2 energy-->
+                            <div id="dd2" class="dropdown_content row bg-light text-dark text-center">
+                                <div class="left col-lg-8 d-lg-flex flex-lg-wrap">
+                                    <div class="solarPanel col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Solar-Panels.avif"
+                                                alt="model_S">
+                                        </div>
+                                        <p class="h5 col-lg-12">Solar Panels</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <div class="solarRoof col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Solar-Roof.avif"
+                                                alt="model_3">
+                                        </div>
+                                        <p class="h5 col-lg-12">Solar Roof</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <div class="powerWall col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Powerwall-US.avif"
+                                                alt="model_X">
+                                        </div>
+                                        <p class="h5 col-lg-12">Powerwall</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <div class="megaPack col-lg-3">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Megapack.avif"
+                                                alt="model_Y">
+                                        </div>
+                                        <p class="h5 col-lg-12">Megapack</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                </div>
+
+                                <div class="right col-lg-4 d-lg-flex ps-5">
+                                    <ul class="list-unstyled text-start">
+                                        <li><a class="text-decoration-none" href="#">Schedule a Consultation</a></li>
+                                        <li><a class="text-decoration-none" href="#">Incentives</a></li>
+                                        <li><a class="text-decoration-none" href="#">Support</a></li>
+                                        <li><a class="text-decoration-none" href="#">Partner with Tesla</a></li>
+                                        <li><a class="text-decoration-none" href="#">Commercial</a></li>
+                                        <li><a class="text-decoration-none" href="#">Utilities</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- li 3 -->
+                        <li class="charging"><a href="#"
+                                class="nav-link  px-lg-2 fw-semibold">Charging</a>
+                            <!-- dropdown content3 charging-->
+                            <div id="dd3" class="dropdown_content row bg-light text-dark text-center">
+                                <div class="left col-lg-8 d-lg-flex flex-lg-wrap">
+                                    <div class="charging col-lg-4">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Menu-Charging.avif"
+                                                alt="model_S">
+                                        </div>
+                                        <p class="h5 col-lg-12">Charging</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <div class="homeCharging col-lg-4">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Menu-Charging1.avif"
+                                                alt="model_3">
+                                        </div>
+                                        <p class="h5 col-lg-12">Home Charging</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                    <div class="superCharging col-lg-4">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Supercharging.avif"
+                                                alt="model_X">
+                                        </div>
+                                        <p class="h5 col-lg-12">Supercharging</p>
+                                        <a class="col-lg-6  pe-2" href="#">Learn</a>
+                                        <a class="col-lg-6  ps-2" href="#">Order</a>
+                                    </div>
+                                </div>
+
+                                <div class="right col-lg-4 d-lg-flex ps-5">
+                                    <ul class="list-unstyled text-start">
+                                        <li><a class="text-decoration-none" href="#">Charging Calculator</a></li>
+                                        <li><a class="text-decoration-none" href="#">Trip Planner</a></li>
+                                        <li><a class="text-decoration-none" href="#">Supercharger Voting</a></li>
+                                        <li><a class="text-decoration-none" href="#">Host a Supercharger</a></li>
+                                        <li><a class="text-decoration-none" href="#">Commercial Charging</a></li>
+                                        <li><a class="text-decoration-none" href="#">Host Wall Connectors</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <!-- li 4 -->
+                        <li class="discover"><a href="#"
+                                class="nav-link  px-lg-2 fw-semibold">Discover</a>
+                            <!-- dropdown content4 discover-->
+                            <div id="dd4" class="dropdown_content row bg-light text-dark text-start">
+                                <div class="middle col-lg-3 d-lg-flex flex-column">
+                                    <p class="text-muted fw-semibold">Resources</p>
+                                    <p><a class="text-decoration-none" href="#">Demo Drive</a></p>
+                                    <p><a class="text-decoration-none" href="#">Insurance</a></p>
+                                    <p><a class="text-decoration-none" href="#">Video Guides</a></p>
+                                    <p><a class="text-decoration-none" href="#">Customer Stories</a></p>
+                                    <p><a class="text-decoration-none" href="#">Events</a></p>
+                                </div>
+
+                                <div class="middle col-lg-3 d-lg-flex flex-column">
+                                    <p class="text-muted fw-semibold">Location Services</p>
+                                    <p><a class="text-decoration-none" href="#">Find Us</a></p>
+                                    <p><a class="text-decoration-none" href="#">Trip Planner</a></p>
+                                    <p><a class="text-decoration-none" href="#">Find a Colpsion Center</a></p>
+                                    <p><a class="text-decoration-none" href="#">Find a Certified Installer</a></p>
+                                </div>
+                                <div class="middle col-lg-3 d-lg-flex flex-column">
+                                    <p class="text-muted fw-semibold">Company</p>
+                                    <p><a class="text-decoration-none" href="#">About</a></p>
+                                    <p><a class="text-decoration-none" href="#">Careers</a></p>
+                                    <p><a class="text-decoration-none" href="#">Investor Relations</a></p>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <!-- li 5 -->
+                        <li class="shop" ><a href="#" class="nav-link  px-lg-2 fw-semibold">Shop</a>
+                            <!-- dropdown content5 shop-->
+                            <div id="dd5" class="dropdown_content row bg-light text-dark text-center">
+                                <div class="left col-lg-12 d-lg-flex flex-lg-wrap justify-content-lg-center">
+                                    <div class="col-lg-2">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Charging.avif"
+                                                alt="Charging">
+                                        </div>
+                                        <a class="text-decoration-none" href="#">
+                                            <p class="h5 col-lg-12">Charging</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="img col-lg-12"><img class="img-fluid"
+                                                src="src/Vehicle-Accessories.avif" alt="Vehicle Accessories">
+                                        </div>
+                                        <a class="text-decoration-none" href="#">
+                                            <p class="h5 col-lg-12">Vehicle Accessories</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Apparel.avif"
+                                                alt="Apparel">
+                                        </div>
+                                        <a class="text-decoration-none" href="#">
+                                            <p class="h5 col-lg-12">Apparel</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="img col-lg-12"><img class="img-fluid" src="src/Lifestyle.avif"
+                                                alt="Lifestyle">
+                                        </div>
+                                        <a class="text-decoration-none" href="#">
+                                            <p class="h5 col-lg-12">Lifestyle</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="icons d-none d-lg-inline col-lg-3  text-lg-end ">
+                        <a type="button" class="btn fs-5 px-lg-1"><i class="fa-regular fa-circle-question"></i></a>
+                        <a type="button" class="btn fs-5 px-lg-1"><i class="fa-solid fa-globe"></i></a>
+                        <a type="button" class="btn fs-5 px-lg-1"><i class="fa-regular fa-circle-user"></i></a>
+                    </div>
+
+                    <!-- menu button for small screens -->
+                    <div class="menu d-flex d-lg-none col-6 justify-content-end" onclick="menu()">
+                        <button id="menu" class="btn btn-dark px-3 py-1" type="button">Menu</button>
+                    </div>
+                </header>
+            </div>
+
+            <!-- bg video -->
+            <div class="video_container container-fluid g-0 w-100">
+                <video class="main_video img-fluid" src="src/Model-3-Main-Hero-Video.mp4" preload="auto" autoplay muted
+                    loop poster="src/Model-3-Main-Desktop-Poster.avif"></video>
+            </div>
+            <div class="product_info text-center">
+                <p class="H1">Model 3</p>
+                <p class="h4">From $29,740*</p>
+                <p>After Federal Tax Credit & Est. Gas Savings</p>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Order Now</a>
+                </button>
+                <button class="demo_drive btn btn-dark" type="button">
+                    <a class="text-decoration-none text-light" href="#">Demo Drive</a>
+                </button>
+                <p class="p1">*Price before incentives and savings is $40,240, excluding taxes and fees.
+                    Subject to change.</p>
+
+                <a href="#" class="text-decoration-none">
+                    <p class="p2">Learn about est. gas savings.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Section2 Model Y -->
+    <div id="s2" class="Section2 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg photo -->
+            <div class="photo_container container-fluid g-0 w-100">
+                <img class="first_photo img-fluid" src="src/Homepage-Model-Y-Desktop.avif" alt="" srcset="">
+
+            </div>
+            <div class="product_info text-center">
+                <p class="H1">Model Y</p>
+                <p class="h4">From $32,890*</p>
+                <p>After Federal Tax Credit & Est. Gas Savings</p>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Order Now</a>
+                </button>
+                <button class="demo_drive btn btn-dark" type="button">
+                    <a class="text-decoration-none text-light" href="#">Demo Drive</a>
+                </button>
+                <p class="p1 text-dark">*Price before incentives and savings is $43,990, excluding taxes and fees.
+                    Subject to change.</p>
+
+                <a href="#" class="text-decoration-none">
+                    <p class="p2">Learn about est. gas savings.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section3 Model S -->
+    <div id="s3" class="Section2 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg photo -->
+            <div class="photo_container container-fluid g-0 w-100">
+                <img class="first_photo img-fluid" src="src/Homepage-Model-S-Desktop.avif" alt="" srcset="">
+
+            </div>
+            <div class="product_info text-center">
+                <p class="H1">Model S</p>
+                <p class="h4">From $71,090*</p>
+                <p>After Est. Gas Savings</p>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Order Now</a>
+                </button>
+                <button class="demo_drive btn btn-dark" type="button">
+                    <a class="text-decoration-none text-light" href="#">Demo Drive</a>
+                </button>
+                <p class="p1">*Price before savings is $74,990, excluding taxes and fees. Subject to change.
+                </p>
+
+                <a href="#" class="text-decoration-none">
+                    <p class="p2">Learn about est. gas savings.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section4 Model X-->
+    <div id="s4" class="Section2 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg photo -->
+            <div class="photo_container container-fluid g-0 w-100">
+                <img class="first_photo img-fluid" src="src/Homepage-Model-X-Desktop.avif" alt="" srcset="">
+
+            </div>
+            <div class="product_info text-dark text-center">
+                <p class="H1">Model X</p>
+                <p class="h4">From $68,590*</p>
+                <p>After Federal Tax Credit & Est. Gas Savings</p>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Order Now</a>
+                </button>
+                <button class="demo_drive btn btn-dark" type="button">
+                    <a class="text-decoration-none text-light" href="#">Demo Drive</a>
+                </button>
+                <p class="p1 text-dark">*Price before incentives and savings is $79,990, excluding taxes and fees.
+                    Subject to change.</p>
+
+                <a href="#" class="text-decoration-none">
+                    <p class="p2 text-dark">Learn about est. gas savings.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section5 Experience Tesla -->
+    <div id="s5" class="Section1 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg video -->
+            <div class="video_container container-fluid g-0 w-100">
+                <video class="main_video img-fluid" src="src/Homepage-Demo-Drive-Desktop.webm" preload="auto" autoplay
+                    muted loop poster="src/Model-3-Main-Desktop-Poster.avif"></video>
+            </div>
+            <div class="product_info text-light text-center">
+                <p class="H1 w-100">Experience Tesla</p>
+                <p>Schedule a Demo Drive Today</p>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="demo_drive btn bg-transparent border border-3 border-light" type="button">
+                    <a class="text-decoration-none text-light" href="#">Demo Drive</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section6 Solar Panels -->
+    <div id="s6" class="Section2 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg photo -->
+            <div class="photo_container container-fluid g-0 w-100">
+                <img class="first_photo img-fluid" src="src/HomePage_SolarPanels.avif" alt="" srcset="">
+
+            </div>
+            <div class="product_info text-dark text-center">
+                <p class="H1 w-100">Solar Panels</p>
+                <a href="#" class="text-decoration-none">
+                    <p class="p2 text-dark">Schedule a Virtual Consultation</p>
+                </a>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Order Now</a>
+                </button>
+                <button class="demo_drive btn btn-dark" type="button">
+                    <a class="text-decoration-none text-light" href="#">Learn More</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section7 Solar Roof -->
+    <div id="s7" class="Section2 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg photo -->
+            <div class="photo_container container-fluid g-0 w-100">
+                <img class="first_photo img-fluid" src="src/Homepage-SolarRoof-Desktop.avif" alt="" srcset="">
+
+            </div>
+            <div class="product_info text-dark text-center">
+                <p class="H1 w-100">Solar Roof</p>
+                <a href="#" class="text-decoration-none">
+                    <p class="text-dark">Produce Clean Energy From Your Roof</p>
+                </a>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Order Now</a>
+                </button>
+                <button class="demo_drive btn btn-dark" type="button">
+                    <a class="text-decoration-none text-light" href="#">Learn More</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section8 Powerwall -->
+    <div id="s8" class="Section2 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg photo -->
+            <div class="photo_container container-fluid g-0 w-100">
+                <img class="first_photo img-fluid" src="src/Homepage-Powerwall-Desktop.avif" alt="" srcset="">
+
+            </div>
+            <div class="product_info text-dark text-center">
+                <p class="H1 w-100">Powerwall</p>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Order Now</a>
+                </button>
+                <button class="demo_drive btn btn-dark" type="button">
+                    <a class="text-decoration-none text-light" href="#">Learn More</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section9 Accessories -->
+    <div id="s9" class="Section2 container-fluid d-flex g-0">
+        <div class="overlay">
+            <!-- bg photo -->
+            <div class="photo_container container-fluid g-0 w-100">
+                <img class="first_photo img-fluid" src="src/Homepage-Accessories-Desktop.avif" alt="" srcset="">
+
+            </div>
+            <div class="product_info text-dark text-center">
+                <p class="H1">Accessories</p>
+            </div>
+            <div class="order_demo w-100 text-center">
+                <button class="order_now btn btn-light" type="button">
+                    <a class="text-decoration-none text-dark" href="#">Shop Now</a>
+                </button>
+            </div>
+
+
+            <!-- footer -->
+            <div class="footer w-100 text-center">
+                <a href="#" class="text-decoration-none px-2">Clone by Siddharth &copy; 2023</a>
+                <a href="#" class="text-decoration-none px-2">Privacy & Legal</a>
+                <a href="#" class="text-decoration-none px-2">Vehicle Recalls</a>
+                <a href="#" class="text-decoration-none px-2">Contact</a>
+                <a href="#" class="text-decoration-none px-2">News</a>
+                <a href="#" class="text-decoration-none px-2">Get Updates</a>
+                <a href="#" class="text-decoration-none px-2">Locations</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- External javaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
